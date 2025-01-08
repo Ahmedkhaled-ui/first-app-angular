@@ -1,0 +1,99 @@
+<section class="d-flex flex-column justify-content-center align-items-center">
+  <h1 class="fw-bolder color-h1">portfolio component</h1>
+</section>
+<section>
+  <div class="container mt-5 text-center">
+    <h1 class="fw-bolder color-h1 fs-1">portfolio component</h1>
+    <div class="">
+      <span class="i"> <i class="fa-solid fa-star mb-2"></i> </span>
+    </div>
+    <div class="row g-4 cursel mb-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="info position-relative overflow-hidden overflow-hidden">
+          <div (click)="test1()" class="show">
+            <div
+              class="element d-flex align-items-center justify-content-center"
+            ></div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <img class="w-100 rounded-2" src="/poert1.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="info position-relative overflow-hidden">
+          <div (click)="test2()" class="show">
+            <div
+              class="element d-flex align-items-center justify-content-center"
+            ></div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img class="w-100 rounded-2" src="/port2.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="info position-relative overflow-hidden">
+          <div (click)="test3()" class="show">
+            <div
+              class="element d-flex align-items-center justify-content-center"
+            ></div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img class="w-100 rounded-2" src="/port3.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-md-6">
+        <div class="info position-relative overflow-hidden">
+          <div (click)="test1()" class="show">
+            <div
+              class="element d-flex align-items-center justify-content-center"
+            ></div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img class="w-100 rounded-2" src="/poert1.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="info position-relative overflow-hidden">
+          <div (click)="test2()" class="show">
+            <div
+              class="element d-flex align-items-center justify-content-center"
+            ></div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img class="w-100 rounded-2" src="/port2.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="info position-relative overflow-hidden">
+          <div (click)="test3()" class="show">
+            <div
+              class="element d-flex align-items-center justify-content-center"
+            ></div>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <img class="w-100 rounded-2" src="/port3.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  @if ( show1 === true) {
+  <div (click)="hidelightBox()" class="lightBox">
+    <div class="Box d-flex justify-content-center align-items-end">
+      <img (click)="box()" class="w-100 rounded-2" [src]="img1" alt="" />
+    </div>
+  </div>
+  } @if ( show2 === true) {
+  <div (click)="hidelightBox()" class="lightBox">
+    <div class="Box d-flex justify-content-center align-items-end">
+      <img (click)="box()" class="w-100 rounded-2" [src]="img2" alt="" />
+    </div>
+  </div>
+  } @if ( show3 === true) {
+  <div (click)="hidelightBox()" class="lightBox">
+    <div class="Box d-flex justify-content-center align-items-end">
+      <img (click)="box()" class="w-100 rounded-2" [src]="img3" alt="" />
+    </div>
+  </div>
+  }
+</section>

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color: #2a3a4a;
+  --color1: rgb(26, 188, 156);
+}
+.bg-self {
+  background-color: var(--color);
+}
+.bg-navLink {
+  background-color: var(--color1);
+}
+
+.bg-body {
+  background-color: rgb(26, 188, 156) !important;
+  height: 500px !important;
+}
+.i {
+  color: #ffffff !important;
+  position: relative;
+}
+.i::after {
+  content: "";
+  background-color: #ffffff !important;
+  width: 100px !important;
+  height: 3px !important;
+  left: 200% !important;
+  top: 50%;
+  position: absolute;
+}
+.i::before {
+  content: "";
+  background-color: #ffffff !important;
+  width: 100px !important;
+  height: 3px !important;
+  right: 200% !important;
+  top: 50%;
+  position: absolute;
+}

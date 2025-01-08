@@ -1,0 +1,104 @@
+.h {
+  height: 700px !important;
+}
+
+.info .text {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0.3rem;
+  left: 10%;
+  width: 80%;
+  padding: 1rem;
+}
+.cursel {
+  cursor: pointer;
+}
+.lightBox {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightBox .Box {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+.lightBox .Box i {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.lightBox .Box #close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.i {
+  color: #2c3e50 !important;
+  position: relative;
+}
+.i::after {
+  content: "";
+  background-color: #2c3e50 !important;
+  width: 100px !important;
+  height: 3px !important;
+  left: 200% !important;
+  top: 50%;
+  position: absolute;
+}
+.i::before {
+  content: "";
+  background-color: #2c3e50 !important;
+  width: 100px !important;
+  height: 3px !important;
+  right: 200% !important;
+  top: 50%;
+  position: absolute;
+}
+.color-h1 {
+  color: #2c3e50 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.show .element {
+  background-color: rgb(11, 144, 144);
+  width: 400px;
+  height: 315px;
+  position: absolute;
+  transition: all 0.5s;
+  opacity: 0%;
+}
+
+.show:hover .element {
+  opacity: 80%;
+}
+
+.show i {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  font-size: 100px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.show:hover i {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  font-size: 100px;
+  opacity: 100%;
+}

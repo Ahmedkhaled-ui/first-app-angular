@@ -1,0 +1,29 @@
+.bg-contact {
+  height: 800px;
+}
+.i {
+  color: #2c3e50 !important;
+  position: relative;
+}
+.i::after {
+  content: "";
+  background-color: #2c3e50 !important;
+  width: 100px !important;
+  height: 3px !important;
+  left: 200% !important;
+  top: 50%;
+  position: absolute;
+}
+.i::before {
+  content: "";
+  background-color: #2c3e50 !important;
+  width: 100px !important;
+  height: 3px !important;
+  right: 200% !important;
+  top: 50%;
+  position: absolute;
+}
+.color-h1 {
+  color: #2c3e50 !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

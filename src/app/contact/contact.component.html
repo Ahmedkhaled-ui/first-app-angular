@@ -1,0 +1,80 @@
+<section
+  class="bg-contact d-flex flex-column justify-content-center text-light align-items-center"
+>
+  <h1 class="fw-bolder color-h1 mt-5">conatct section</h1>
+  <div>
+    <span class="i"> <i class="fa-solid fa-star mb-5"></i> </span>
+  </div>
+  <section class="container">
+    <div>
+      <div
+        class="row justify-content-center flex-column align-items-center gap-4 mt-5"
+      >
+        <div class="col-md-8">
+          @if (showuserName) {
+          <span class="ms-2 small text-success">userName:-</span>
+          }
+          <div
+            (keydown)="showName()"
+            (keydown.Backspace)="hideName()"
+            class="mb-3 rounded-5 mt-2"
+          >
+            <input
+              type="text"
+              class="form-control border-0 border-bottom"
+              placeholder="userName"
+            />
+          </div>
+        </div>
+        <div class="col-md-8">
+          @if (showuserAge) {
+          <span class="ms-2 small text-success trans">userAge:-</span>
+          }
+          <div class="mb-3 rounded-5">
+            <input
+              (keydown)="showAge()"
+              (keydown.Backspace)="hideAge()"
+              type="text"
+              class="form-control mt-4 border-0 border-bottom"
+              placeholder="userAge"
+            />
+          </div>
+        </div>
+        <div class="col-md-8">
+          @if (showuserEmail) {
+          <span class="ms-2 small text-success">userEmail:-</span>
+          }
+          <div class="mb-3 rounded-5">
+            <input
+              (keydown)="showEmail()"
+              (keydown.Backspace)="hideEmail()"
+              type="email"
+              class="form-control border-0 border-bottom mt-4"
+              placeholder="userEmail"
+            />
+          </div>
+        </div>
+        <div class="col-md-8">
+          @if (showuserPass) {
+          <span class="ms-2 small text-success">userPassword:-</span>
+          }
+          <div class="mb-3 rounded-5">
+            <input
+              (keydown)="showPass()"
+              (keydown.Backspace)="hidePass()"
+              type="text"
+              class="form-control border-0 border-bottom mt-4"
+              placeholder="userPassword"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div>
+            <button class="btn btn-success">send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,51 @@
+<div class="">
+  <nav
+    [class.shrink]="inscroll"
+    class="nav navbar navbar-expand-lg bg-self navbar-dark px-lg-5 position-fixed end-0 start-0 z-3"
+  >
+    <div class="container">
+      <a class="navbar-brand fw-bolder fs-2" routerLink="home"
+        >START FRAMEWORK</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex ms-auto gap-3">
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5 fw-bold"
+              routerLinkActive="text-light bg-navLink rounded-4 bg-navLink rounded-4"
+              routerLink="about"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5 fw-bold"
+              routerLinkActive="text-light bg-navLink rounded-4 "
+              routerLink="protfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fs-5 fw-bold"
+              routerLinkActive="text-light bg-navLink rounded-4"
+              routerLink="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
